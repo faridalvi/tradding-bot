@@ -1,7 +1,8 @@
 :root{
     --white: #FFFFFF;
     --black: #000000;
-    --bg-color: #303a70;
+    --bg-color: #272e5f;
+    --trading-bg:#44519a;
     --primary: #0091ff;
     --info:#52bfc8;
     --success:#51dba1;
@@ -12,6 +13,13 @@ body, html {
     width:100%;
     position:relative;
     background-color: var(--bg-color);
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+}
+.mt-mb-5{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 /*Main Menu*/
 .navbar-brand-logo{
@@ -78,7 +86,7 @@ body, html {
 }
 /*Logo Slider*/
 .crypto-coins{
-    margin-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
     color: var(--white);
     text-align: center;
     text-transform: capitalize;
@@ -87,6 +95,50 @@ body, html {
     width: 60px;
     height: 60px;
     object-fit: contain;
+}
+#scrollToBottom{
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: .75rem .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*Trading Platform*/
+.trading-card{
+    background-color: var(--trading-bg);
+}
+.trading-card i{
+    color: var(--primary);
+    font-size: 2rem;
+}
+.trading-card p{
+    color: var(--white);
+    margin-top: .25rem;
+    text-transform: capitalize;
+
+}
+/*strategies*/
+.strategy{
+    color: var(--white);
+}
+.strategy img{
+    width: 100%;
+}
+.strategy h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.strategy h3{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+.strategy p{
+    color: var(--purple);
+}
+.strategy p i{
+    color: var(--primary);
+    margin-right: .5rem;
+    font-size: 1.25rem;
 }
 @media screen  and (max-width: 992px){
     .home-slider{

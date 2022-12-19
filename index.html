@@ -47,10 +47,10 @@
     </div>
 </div>
 <!--Logo Slider-->
-<div class="container my-5">
-    <h6 class="crypto-coins"><i class="fa fa-mouse"></i></h6>
+<div class="container mt-mb-5 mb-2">
+    <h6 class="crypto-coins"><i class="fa fa-mouse" id="scrollToBottom"></i></h6>
 </div>
-<div class="container my-5">
+<div class="container mt-mb-5">
     <h6 class="crypto-coins">crypto coins</h6>
     <div class="owl-carousel logo-slider">
         <div class="item"><img src="assets/images/coin-1.png" alt="Coin" class="owl-image"></div>
@@ -63,6 +63,52 @@
         <div class="item"><img src="assets/images/coin-8.png" alt="Coin" class="owl-image"></div>
         <div class="item"><img src="assets/images/coin-9.png" alt="Coin" class="owl-image"></div>
         <div class="item"><img src="assets/images/coin-10.png" alt="Coin" class="owl-image"></div>
+    </div>
+</div>
+<div class="container mt-mb-5">
+    <h5 class="crypto-coins mb-2">most trusted trading platform</h5>
+    <h5 class="crypto-coins">operated by alpha bot</h5>
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-2">
+            <div class="card trading-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>FoolProof Security pic</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-2">
+            <div class="card trading-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-exchange-alt"></i>
+                    <p>easy to transfer</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-2">
+            <div class="card trading-card">
+                <div class="card-body text-center">
+                    <i class="fas fa-atom"></i>
+                    <p>no fear of loss</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Strategies-->
+<div class="container mt-mb-5">
+    <div class="row strategies">
+        <div class="col-md-6 strategy">
+            <img src="assets/images/stratergy.png" alt="">
+        </div>
+        <div class="col-md-6 strategy">
+            <h1>Our Strategies</h1>
+            <h3>First of its kind to use three different strategies.</h3>
+            <p><i class="fas fa-pound-sign"></i> By using the sentiment from thousands of user patterns.</p>
+            <p><i class="fas fa-ruble-sign"></i> Our bot has built-in knowledge of trader's books.</p>
+            <p><i class="fas fa-rupee-sign"></i> Plus using paid indicators from the biggest crypto exchange.</p>
+            <p>To ensure more accurate and successful trade.</p>
+        </div>
     </div>
 </div>
 <!--Scripts -->
@@ -78,7 +124,10 @@
             }
         });
         //Scroll to Bottom
-
+        $('#scrollToBottom').bind("click", function () {
+            $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+            return false;
+        });
         //Slider
         var owl = $('.logo-slider');
         owl.owlCarousel({
@@ -86,7 +135,7 @@
             loop:true,
             margin:10,
             autoplay:true,
-            autoplayTimeout:1000,
+            autoplayTimeout:3000,
             responsiveClass:true,
             responsive:{
                 0:{

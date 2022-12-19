@@ -69,14 +69,17 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: bold;
     text-transform: uppercase;
     font-size: 3.5rem;
+    margin-bottom: 1rem;
 }
 .slider-text h6{
     color: var(--primary);
     text-transform: capitalize;
+    margin-bottom: 1rem;
 }
 .slider-text p{
     color: var(--purple);
     text-transform: capitalize;
+    margin-bottom: 1rem;
 }
 /*Btn*/
 .btn-gradient{
@@ -134,6 +137,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .strategy p{
     color: var(--purple);
+    margin-bottom: 1.25rem;
 }
 .strategy p i{
     color: var(--primary);

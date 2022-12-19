@@ -144,6 +144,31 @@ h1,h2,h3,h4,h5,h6,p{
     margin-right: .5rem;
     font-size: 1.25rem;
 }
+/*profit-calculator*/
+.profit-calculator {
+    background-color: var(--trading-bg);
+}
+.profit-calculator .card-body{
+    padding: 3rem;
+}
+.profit-calculator h6,
+.profit-calculator p{
+    color: var(--purple);
+}
+.profit-calculator h6{
+    margin-bottom: .5rem;
+}
+.profit-calculator h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    border-bottom: 2px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+}
+.profit-calculator h2 span{
+    color: var(--purple);
+}
 @media screen  and (max-width: 992px){
     .home-slider{
         height: auto;

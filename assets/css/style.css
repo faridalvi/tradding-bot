@@ -14,6 +14,9 @@ body, html {
     position:relative;
     background-color: var(--bg-color);
 }
+a:hover,a{
+    text-decoration: none;
+}
 h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 0;
 }
@@ -168,6 +171,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .profit-calculator h2 span{
     color: var(--purple);
+}
+/*market-perspective*/
+.market-perspective h4{
+    color: white;
+}
+.market-perspective h4 span{
+    color: var(--purple);
+    font-weight: lighter;
+}
+.market-perspective h4 b{
+    color: var(--info);
+    font-weight: lighter;
 }
 @media screen  and (max-width: 992px){
     .home-slider{

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trading Bot</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Main Menu-->
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <a class="navbar-brand navbar-brand-logo" href="#">
+            <img src="assets/images/logo.png" alt="Logo Image" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link btn-gradient" href="#">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--Header-->
+<div class="home-slider">
+    <div class="slider-image">
+        <img src="assets/images/slide.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="slider-text">
+            <h1>Introducing Alpha Bot</h1>
+            <h6>Specialized Next Generation artificial intellisense trading bot.</h6>
+            <p>intellisense ai machine learning</p>
+        </div>
+    </div>
+</div>
+<!--Logo Slider-->
+<div class="container my-5">
+    <h6 class="crypto-coins"><i class="fa fa-mouse"></i></h6>
+</div>
+<div class="container my-5">
+    <h6 class="crypto-coins">crypto coins</h6>
+    <div class="owl-carousel logo-slider">
+        <div class="item"><img src="assets/images/coin-1.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-2.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-3.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-4.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-5.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-6.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-7.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-8.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-9.png" alt="Coin" class="owl-image"></div>
+        <div class="item"><img src="assets/images/coin-10.png" alt="Coin" class="owl-image"></div>
+    </div>
+</div>
+<!--Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script>
+    $(function($) {
+        var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+        $('#main-menu a').each(function() {
+            if (this.href === path) {
+                $(this).addClass('active');
+            }
+        });
+        //Scroll to Bottom
+
+        //Slider
+        var owl = $('.logo-slider');
+        owl.owlCarousel({
+            items:10,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:3,
+                },
+                600:{
+                    items:6,
+                },
+                1000:{
+                    items:10,
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

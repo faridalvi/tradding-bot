@@ -1,0 +1,98 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --bg-color: #303a70;
+    --primary: #0091ff;
+    --info:#52bfc8;
+    --success:#51dba1;
+    --purple: #adbaff
+}
+body, html {
+    height: 100%;
+    width:100%;
+    position:relative;
+    background-color: var(--bg-color);
+}
+/*Main Menu*/
+.navbar-brand-logo{
+    width: 50px;
+    height: 50px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#main-menu .navbar-nav .nav-item:not(:last-of-type){
+    margin-right: 1rem;
+}
+#main-menu .nav-link{
+    color: var(--white);
+}
+#main-menu .nav-link.active{
+    color: var(--info);
+}
+/*Slider*/
+.home-slider{
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+}
+.slider-image{
+    height: 100%;
+}
+.slider-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-text{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: var(--white);
+    background-color: rgba(0,0,0,.45);
+    padding: 1.25rem;
+    border-radius: 8px;
+    max-width: 50ch;
+}
+.slider-text h1{
+    color: var(--white);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.slider-text h6{
+    color: var(--primary);
+    text-transform: capitalize;
+}
+.slider-text p{
+    color: var(--purple);
+    text-transform: capitalize;
+}
+/*Btn*/
+.btn-gradient{
+    background-image: linear-gradient(to right,var(--info),var(--success));
+    border-radius: 8px;
+    color: var(--white);
+}
+/*Logo Slider*/
+.crypto-coins{
+    margin-bottom: 1.75rem;
+    color: var(--white);
+    text-align: center;
+    text-transform: capitalize;
+}
+.logo-slider .owl-image{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+@media screen  and (max-width: 992px){
+    .home-slider{
+        height: auto;
+    }
+    .slider-text h1{
+        font-size: inherit;
+    }
+}

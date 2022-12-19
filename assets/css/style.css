@@ -6,7 +6,8 @@
     --primary: #0091ff;
     --info:#52bfc8;
     --success:#51dba1;
-    --purple: #adbaff
+    --purple: #adbaff;
+    --gray:#9fa1b6;
 }
 body, html {
     height: 100%;
@@ -183,6 +184,23 @@ h1,h2,h3,h4,h5,h6,p{
 .market-perspective h4 b{
     color: var(--info);
     font-weight: lighter;
+}
+.market-perspective p{
+    color: var(--purple);
+    max-width: 50ch;
+}
+.market-perspective p span{
+    color: var(--gray);
+    font-weight: bold;
+}
+.benefits{
+    max-width: 50ch;
+}
+.benefits-form label{
+    color: var(--purple);
+}
+.forgot-password{
+    color:var(--purple);
 }
 @media screen  and (max-width: 992px){
     .home-slider{

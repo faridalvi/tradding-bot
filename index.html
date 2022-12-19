@@ -158,12 +158,67 @@
     <div class="market-perspective">
         <h3 class="text-center text-white mb-5">Market Perspective</h3>
         <h4><span>E-commerce boost</span> <b>/</b> Customer market growth</h4>
+        <div class="col-xl-12 charts my-5">
+            <div class="chart-container">
+                <canvas id="month_wise" height="200" width="200"></canvas>
+            </div>
+            <div class="mt-3">
+                <p><span>Disclaimer:</span> we can not guarantee your profit or loss. That is determined by your investment and the market trend</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Deposits-->
+<!--profit calculator-->
+<div class="container mt-mb-5">
+    <h3 class="text-center text-white mb-5">Don't Wait. Use BTC Right Now</h3>
+    <div class="row">
+        <div class="col-lg-6 strategy">
+            <div class="benefits">
+                <h1>Your Benefits</h1>
+                <h3>Whether you are Novice or Pro at crypto trading</h3>
+                <p>Alpha bot is the place for you. Unlike most bots that charged upto $5,000 to start not to mention $5,000 or more to invest,minimum. Alpha Bot charged a small monthly service fee. And
+                    start trading with a minimum investment, that fits your budget.</p>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card profit-calculator">
+                <div class="card-body benefits-form">
+                    <form action="">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">password</label>
+                                    <input type="password" class="form-control" >
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-end">
+                                <a href="#" class="forgot-password">FORGOT PASSWORD</a>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <input type="submit" class="btn btn-gradient px-5" value="Login">
+                            </div>
+                            <div class="col-md-12 text-center mt-3">
+                                <span class="forgot-password">Not on Bitarea yet? <a href="#" class="text-primary">Register</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--Scripts -->
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/chart.js"></script>
 <script>
     $(function($) {
         var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
@@ -198,6 +253,61 @@
                 }
             }
         });
+        //Chart
+        var myChart = new Chart(
+            document.getElementById('month_wise'),
+            config = {
+                type: 'line',
+                data : {
+                    labels: [2016,2017,2018,2019,2020,2021,2022],
+                    datasets: [
+                        {
+                            label: '',
+                            data: [110,135,160,185,210,320,400],
+                            borderColor: '#707070',
+                            backgroundColor: '#ffffff',
+                            tension: 0.4,
+                        },
+                    ]
+                },
+                options: {
+                    scales:{
+                        x:{
+                            ticks:{
+                                color:['#a5a7bb','#d2d3dd','#d2d3dd','#e7e8ed','#ffffff','#ffffff','#ffffff'],
+                                font: {
+                                    size: 20,
+                                    weight:'bold'
+                                }
+                            }
+                        },
+                        y: {
+                            display: true,
+                            title: {
+                                display: true,
+                                text: 'Thousands Stores',
+                                color: '#fff',
+                                font: {
+                                    size: 15,
+                                    weight:'bold'
+                                }
+                            },
+                        }
+                    },
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position:'left',
+                            align:'middle',
+                            labels:{
+                                boxWidth:0,
+                                boxHeight:0
+                            },
+                        },
+                    },
+                },
+            });
     });
 </script>
 </body>
